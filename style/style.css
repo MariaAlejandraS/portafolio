@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root {
+    --color-primario: black;
+    --color-secundario: white;
+    --color-terciario: aqua;
+    --fuente-monserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.título-destaque {
+    color: aqua;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header__menú {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menú__link {
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.subtítulo-destaque {
+    color: blueviolet;
+}
+
+.presentación {
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentación__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentación__contenido__título {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentación__contenido__texto {
+    font-size: 1.5rem;
+}
+
+.presentación__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+.presentación__enlaces__link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.presentación__enlaces__subtítulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentación__enlaces__link:hover {
+    background-color: #272727;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentación__imagen {
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .presentación {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentación__contenido {
+        width: auto;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menú {
+        justify-content: center;
+    }
+
+}
